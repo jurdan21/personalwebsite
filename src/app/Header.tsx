@@ -7,9 +7,9 @@ export default function Header() {
 
         {/* Center: Navigation */}
         <nav className="flex justify-center gap-52">
-          <a href="#" className="text-h7-regular text-black-base font-sans hover:underline transition-all" style={{ color: '#181818' }}>Home</a>
-          <a href="#" className="text-h7-regular text-black-base font-sans hover:underline transition-all" style={{ color: '#181818' }}>About</a>
-          <a href="#" className="text-h7-regular text-black-base font-sans hover:underline transition-all" style={{ color: '#181818' }}>Showcase</a>
+          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Home</a>
+          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>About</a>
+          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Showcase</a>
         </nav>
 
         {/* Right: Status & CTA */}
@@ -24,7 +24,7 @@ export default function Header() {
             </span>
           </div>
           <div className="w-[40px] h-[1px] bg-[#181818] mx-4" />
-          <a href="#" className="text-h7-medium text-black-base font-bold font-sans hover:underline transition-all whitespace-nowrap" style={{ color: '#181818' }}>Let&apos;s talk</a>
+          <a href="#" className="text-h7-medium text-black-base font-bold font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100 whitespace-nowrap" style={{ color: '#181818' }}>Let&apos;s talk</a>
         </div>
       </div>
     </header>

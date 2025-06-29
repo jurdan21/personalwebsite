@@ -1,3 +1,5 @@
+'use client';
+
 export default function HeroSection() {
   return (
     <section
@@ -45,7 +47,16 @@ export default function HeroSection() {
           {/* Row 3: Est, Scroll, Detail */}
           <div className="w-full flex flex-row items-end justify-between">
             <span className="text-[18px] leading-[28px] font-normal text-black-base" style={{ color: '#181818' }}>Est. 2021</span>
-            <span className="text-[18px] leading-[28px] font-normal text-black-base" style={{ color: '#181818' }}>(Scroll down ↓)</span>
+            <button
+              className="text-[18px] leading-[28px] font-normal text-black-base cursor-pointer bg-transparent border-0 p-0 relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
+              style={{ color: '#181818' }}
+              onClick={() => {
+                const el = document.getElementById('projects');
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
+              (Scroll down <span className="inline-block animate-bounce">↓</span>)
+            </button>
             <span className="text-[18px] leading-[28px] font-normal text-black-base" style={{ color: '#181818' }}>Live in the detail(s)</span>
           </div>
         </div>

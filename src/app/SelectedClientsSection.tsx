@@ -24,9 +24,9 @@ export default function SelectedClientsSection() {
           </h2>
         </div>
         {/* Grid Logo */}
-        <div className="flex-[3] grid grid-cols-4 grid-rows-3 gap-0 w-full">
+        <div className="flex-[3] grid grid-cols-4 grid-rows-3 gap-0 w-full border-l border-t border-[#E7E7E7]" style={{ columnGap: '-1px' }}>
           {clientLogos.map((logo, i) => (
-            <div key={i} className="flex items-center justify-center border border-[#E7E7E7] bg-white aspect-[5/3] h-full">
+            <div key={i} className="flex items-center justify-center border-r border-b border-[#E7E7E7] bg-white aspect-[5/3] h-full">
               <img
                 src={logo}
                 alt={`Client Logo ${i+1}`}

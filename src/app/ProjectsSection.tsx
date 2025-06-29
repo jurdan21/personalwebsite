@@ -29,6 +29,7 @@ export default function ProjectsSection() {
 
   return (
     <section
+      id="projects"
       className="w-full text-white px-8 py-[160px] flex flex-col gap-[160px] relative overflow-hidden"
       style={{
         fontFamily: 'Power Grotesk, sans-serif',
