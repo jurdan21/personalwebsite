@@ -2,17 +2,18 @@
 import { useEffect, useState, useRef } from 'react';
 
 export default function SplashScreen({ children }: { children: React.ReactNode }) {
-  const [showSplash, setShowSplash] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return !window.sessionStorage.getItem('splashShown');
-    }
-    return true;
-  });
+  const [showSplash, setShowSplash] = useState(true);
   const textWrapperRef = useRef<HTMLSpanElement>(null);
   const splashRef = useRef<HTMLDivElement>(null);
 
+  // Minimal durasi splash screen (ms)
+  const MIN_SPLASH_DURATION = 2000;
+  const splashStartRef = useRef<number | null>(null);
+
+  // Jalankan animasi jika showSplash true
   useEffect(() => {
     if (!showSplash) return;
+    splashStartRef.current = Date.now();
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js';
     script.async = true;
@@ -43,8 +44,13 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
             duration: 400,
             easing: "easeOutExpo",
             complete: () => {
-              window.sessionStorage.setItem('splashShown', 'true');
-              setShowSplash(false);
+              const elapsed = Date.now() - (splashStartRef.current || 0);
+              const remaining = MIN_SPLASH_DURATION - elapsed;
+              if (remaining > 0) {
+                setTimeout(() => setShowSplash(false), remaining);
+              } else {
+                setShowSplash(false);
+              }
             }
           });
       }
