@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="z-50 w-full py-6 px-8 flex items-center bg-white justify-between">
@@ -7,9 +9,9 @@ export default function Header() {
 
         {/* Center: Navigation */}
         <nav className="flex justify-center gap-52">
-          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Home</a>
-          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>About</a>
-          <a href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Showcase</a>
+          <Link href="/" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Home</Link>
+          <Link href="/about" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>About</Link>
+          <Link href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Showcase</Link>
         </nav>
 
         {/* Right: Status & CTA */}
