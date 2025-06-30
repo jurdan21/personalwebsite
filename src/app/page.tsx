@@ -1,3 +1,4 @@
+import SplashScreen from "./SplashScreen";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import ProjectsSection from "./ProjectsSection";
@@ -11,7 +12,7 @@ export default function Home() {
   // Debug log
   console.log('Home page rendered, FooterSection should appear below.');
   return (
-    <div>
+    <SplashScreen>
       <Header />
       <HeroSection />
       <ProjectsSection />
@@ -22,6 +23,6 @@ export default function Home() {
       <FooterSection />
       {/* Fallback jika FooterSection tidak tampil */}
       <noscript>Footer fallback: Jika Anda melihat ini, FooterSection gagal di-render.</noscript>
-    </div>
+    </SplashScreen>
   );
 }
