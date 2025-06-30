@@ -11,7 +11,7 @@ export default function Header() {
         <nav className="flex justify-center gap-52">
           <Link href="/" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Home</Link>
           <Link href="/about" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>About</Link>
-          <Link href="#" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Showcase</Link>
+          <Link href="/showcase" className="text-h7-regular text-black-base font-sans transition-all relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100" style={{ color: '#181818' }}>Showcase</Link>
         </nav>
 
         {/* Right: Status & CTA */}
