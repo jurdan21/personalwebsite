@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="w-full max-w-6xl mx-auto flex flex-col gap-16">
           {/* Row 1: Description & Resume CTA */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-baseline gap-8 md:gap-0">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-[52%]">
               <p className="text-base md:text-lg mb-6" style={{ color: '#181818', fontFamily: 'Power Grotesk, sans-serif' }}>
                 I&apos;m Jurdan Wahyu, a UX/UI Designer based in Malang, Indonesia, with a strong focus on clarity, usability, and product driven design.<br /><br />
                 I started my career in 2021 as a full-time designer at Feedloop.ai, where I worked on a range of data-driven and enterprise platforms. In parallel, I&apos;ve taken on freelance opportunities helping startups and small teams craft thoughtful user experiences from concept to launch.<br /><br />
@@ -30,7 +30,7 @@ export default function AboutPage() {
               <img
                 src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1751256853/New%20Website/jurdanimg_xtf73o.png"
                 alt="Jurdan Wahyu"
-                className="rounded-md object-cover w-48 h-60 md:w-56 md:h-72 shadow-md"
+                className="object-cover w-48 h-60 md:w-56 md:h-72"
                 style={{ objectPosition: 'top' }}
               />
             </div>

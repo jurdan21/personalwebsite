@@ -84,7 +84,7 @@ export default function ShowcasePage() {
     <>
       <Header />
       <main className="w-full min-h-screen flex flex-col items-start bg-white px-8 pb-60 pt-16">
-        <div className="w-full max-w-7xl">
+        <div className="w-full max-w-8xl">
           {/* Baris 1: Judul dan info */}
           <div className="flex flex-row justify-start items-end mb-[160px]" style={{ gap: '300px' }}>
             <div>

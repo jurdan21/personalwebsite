@@ -3,7 +3,7 @@
 export default function HeroSection() {
   return (
     <section
-      className="w-full max-w-[1440px] mx-auto min-h-[90vh] px-8 pt-[116px] pb-20 bg-white relative overflow-hidden"
+      className="w-full max-w-[1440px] mx-auto px-8 pt-[116px] pb-20 bg-white relative overflow-hidden"
       style={{
         backgroundColor: '#fff',
       }}
