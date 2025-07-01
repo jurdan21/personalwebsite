@@ -15,11 +15,11 @@ export default function FooterSection() {
         {/* Row 2 */}
         <div className="flex flex-col md:flex-row items-start justify-between w-1/2 px-8 mx-auto">
           <div className="flex flex-col gap-2 text-[20px] md:text-[24px]">
-            <a href="#" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">LingkedIn</a>
-            <a href="#" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Dribbble</a>
-            <a href="#" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Layers</a>
-            <a href="#" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Instagram</a>
-            <a href="#" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Medium</a>
+            <a href="https://www.linkedin.com/in/jurdanwahyu/" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">LingkedIn</a>
+            <a href="https://dribbble.com/jurdan21" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Dribbble</a>
+            <a href="https://layers.to/jurdanwahyu" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Layers</a>
+            <a href="https://www.instagram.com/jurdanwahyu/" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Instagram</a>
+            <a href="https://medium.com/@jurdann.wahyu" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Medium</a>
           </div>
           <a href="#" className="text-[20px] md:text-[24px] mt-8 md:mt-0 relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Resume ↓</a>
         </div>

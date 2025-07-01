@@ -1,23 +1,23 @@
 const testimonials = [
   {
-    text: `Jurdan doesn't just deliver designs — he brings structure, clarity, and user-first thinking to the table. His ability to balance business goals with user experience helped our team ship a better product, faster.`,
-    name: 'Daniel Harper',
-    role: 'UX Researcher',
+    text: `Every time I catch up with Jurdan’s work, there’s something new, a sharper idea, a better layout, a smarter solution. You can really see the growth in every project he touches. He’s intentional about his process, open to learning, and always exploring how to make things better. It’s been inspiring to follow his journey, and I’m excited to see the designer he’s becoming.`,
+    name: 'Rizki Agus',
+    role: 'Product Designer & Co-Founder UX Scan',
   },
   {
-    text: `Working with Jurdan was one of the best decisions we made for our product. He quickly understood what we needed, translated it into clean and intuitive UI, and improved our user flow dramatically. We've received positive feedback from users ever since.`,
-    name: 'Emily Zhao',
-    role: 'Product Manager',
+    text: `I’ve witnessed how fast Jurdan has grown. I’ve learned a lot from him, especially when it comes to creating designs with strong visuals. Jurdan works quickly and efficiently, and many of his ideas are ones I wouldn’t have thought of on my own. He is a talented designer, and I highly recommend him.`,
+    name: 'Satria Ridho',
+    role: 'Senior UX Designer',
   },
   {
-    text: `I came in with just a rough idea, and Jurdan turned it into a professional-looking product in a matter of days. He asked the right questions, challenged my assumptions, and delivered something far better than I expected.`,
-    name: 'Leo Martins',
-    role: 'Senior Product Designer',
+    text: `Jurdan truly exceeded our expectations. The landing page he designed for Tomcspace not only looked clean and professional, but also helped double our website traffic within just a few weeks. He listened carefully to our goals and translated them into a design that works — both visually and strategically. I’d absolutely recommend him to anyone who needs high-performing product pages.`,
+    name: 'Imam Rizal',
+    role: 'Owner Tomcspace',
   },
   {
-    text: `As a developer, collaborating with Jurdan has always been smooth. His handoffs are clear, consistent, and well-documented. He anticipates edge cases and always thinks one step ahead.`,
-    name: 'Sofia Andersson',
-    role: 'Senior Product Designer',
+    text: `I remember when Feedloop.ai needed a strong UI/UX designer and ultimately decided to hire Jurdan. At that time, Jurdan had only been learning UI/UX design for 6 months, yet he was already able to showcase a remarkably mature and impressive portfolio. What a fast learner, I thought. Since then, we've collaborated on several projects for Feedloop.ai and other clients. Jurdan is incredibly reliable in delivering high-quality work on time. His kind and helpful nature makes him a valuable team player who's always willing to support colleagues, and his positive energy as a natural mood maker creates an enjoyable work environment for everyone. Jurdan combines strong technical design skills with outstanding interpersonal qualities, making him an asset to any team. I highly recommend him for any UI/UX design role.`,
+    name: 'Rukma Pratista',
+    role: 'Head of Design',
   },
 ];
 
@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
           pointerEvents: 'none',
         }}
       />
-      <div className="w-full max-w-[1440px] flex flex-row items-stretch gap-[240px] relative z-10">
+      <div className="w-full max-w-[1440px] flex flex-row items-stretch gap-[100px] relative z-10">
         {/* Title */}
         <div className="flex-1 flex justify-start pt-12">
           <h2 className="text-[48px] leading-[56px] font-normal text-black-base text-left self-end" style={{ fontFamily: 'Power Grotesk, sans-serif', color: '#181818' }}>
