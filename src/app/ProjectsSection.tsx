@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+import Image from 'next/image';
 
 const projects = [
   { no: "01", name: "Feedloop Website V2", type: "Website", date: "22.22.2023", url: "/projects/feedloop-website-v2", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "02", name: "Verdant", type: "Landingpage", date: "22.22.2023", url: "/projects/verdant", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "02", name: "Verdant", type: "Landingpage", date: "1.1.2024", url: "/projects/verdant", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1751548213/New%20Website/Assert/Verdant/6_dsp5i9.webp" },
   { no: "03", name: "Ngelu Doc", type: "Mobile App", date: "22.22.2023", url: "/projects/ngelu-doc", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
   { no: "04", name: "Watujo Interior", type: "Website", date: "22.22.2023", url: "/projects/watujo-interior", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
   { no: "05", name: "Carros", type: "Landingpage", date: "22.22.2023", url: "/projects/carros", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
@@ -56,24 +57,30 @@ export default function ProjectsSection() {
       />
       {/* Floating image on hover */}
       {hoveredIdx !== null && (
-        <img
-          src={projects[hoveredIdx].image}
-          alt="Preview"
+        <div
           style={{
             position: 'fixed',
             right: 48,
             top: imgTop,
             transform: 'translateY(-50%)',
             width: 260,
-            height: 260,
-            aspectRatio: '1/1',
-            objectFit: 'cover',
+            height: 180,
+            aspectRatio: '4/3',
             boxShadow: '0 8px 32px rgba(0,0,0,0.25)',
             zIndex: 50,
             pointerEvents: 'none',
             transition: 'opacity 0.2s',
           }}
-        />
+        >
+          <Image
+            src={projects[hoveredIdx].image}
+            alt="Preview"
+            fill
+            style={{ objectFit: 'cover', borderRadius: 8 }}
+            sizes="260px"
+            priority={false}
+          />
+        </div>
       )}
       <div className="relative z-10 flex flex-col gap-[160px]">
         {/* Row 1 & 2: Title + Type & Year */}

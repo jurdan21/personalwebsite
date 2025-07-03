@@ -1,6 +1,7 @@
 import Header from '../Header';
 import FooterSection from '../FooterSection';
 import PatternImageSection2 from '../PatternImageSection2';
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -27,12 +28,17 @@ export default function AboutPage() {
           {/* Row 2: Avatar & List Konten */}
           <div className="flex flex-col md:flex-row md:justify-end gap-12 md:gap-[280px] items-start">
             <div className="flex justify-center md:justify-start w-full md:w-auto">
-              <img
-                src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1751256853/New%20Website/jurdanimg_xtf73o.png"
-                alt="Jurdan Wahyu"
-                className="object-cover w-48 h-60 md:w-56 md:h-72"
-                style={{ objectPosition: 'top' }}
-              />
+              <div className="relative w-48 h-60 md:w-56 md:h-72">
+                <Image
+                  src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1751256853/New%20Website/jurdanimg_xtf73o.png"
+                  alt="Jurdan Wahyu"
+                  fill
+                  className="object-cover"
+                  style={{ objectPosition: 'top' }}
+                  sizes="(max-width: 768px) 100vw, 300px"
+                  priority={true}
+                />
+              </div>
             </div>
             <div className="flex flex-col gap-12 md:items-end text-left w-full md:w-auto">
               <div className="text-left w-full md:w-[400px]">
