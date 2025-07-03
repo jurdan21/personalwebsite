@@ -76,7 +76,7 @@ export default function ProjectsSection() {
             src={projects[hoveredIdx].image}
             alt="Preview"
             fill
-            style={{ objectFit: 'cover', borderRadius: 8 }}
+            style={{ objectFit: 'cover', borderRadius: 0 }}
             sizes="260px"
             priority={false}
           />
