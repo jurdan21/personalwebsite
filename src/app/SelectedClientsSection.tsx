@@ -15,22 +15,22 @@ const clientLogos = [
 
 export default function SelectedClientsSection() {
   return (
-    <section className="w-full bg-white flex justify-center items-top px-8 py-[160px]">
-      <div className="w-full max-w-[1440px] flex flex-row items-top">
+    <section className="w-full bg-white flex justify-center items-top px-4 sm:px-6 md:px-8 py-12 md:py-24 lg:py-[160px]">
+      <div className="w-full max-w-[1440px] flex flex-col lg:flex-row items-top">
         {/* Title */}
-        <div className="flex-1 flex items-start justify-start pt-12">
-          <h2 className="text-[48px] leading-[56px] font-normal text-black-base text-left self-start" style={{ fontFamily: 'Power Grotesk, sans-serif', color: '#181818' }}>
+        <div className="flex-1 flex items-start justify-start pt-4 md:pt-12">
+          <h2 className="text-2xl md:text-4xl lg:text-[48px] leading-8 md:leading-[56px] font-normal text-black-base text-left self-start" style={{ fontFamily: 'Power Grotesk, sans-serif', color: '#181818' }}>
             Selected<br />Clients
           </h2>
         </div>
         {/* Grid Logo */}
-        <div className="flex-[3] grid grid-cols-4 grid-rows-3 gap-0 w-full border-l border-t border-[#E7E7E7]" style={{ columnGap: '-1px' }}>
+        <div className="flex-[3] grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 grid-rows-6 sm:grid-rows-4 md:grid-rows-3 gap-0 w-full border-l border-t border-[#E7E7E7]" style={{ columnGap: '-1px' }}>
           {clientLogos.map((logo, i) => (
             <div key={i} className="flex items-center justify-center border-r border-b border-[#E7E7E7] bg-white aspect-[5/3] h-full">
               <img
                 src={logo}
                 alt={`Client Logo ${i+1}`}
-                style={{ maxWidth: '120px', maxHeight: '60px', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }}
+                style={{ maxWidth: '100px', maxHeight: '40px', width: 'auto', height: 'auto', objectFit: 'contain', display: 'block' }}
               />
             </div>
           ))}

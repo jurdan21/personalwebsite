@@ -83,41 +83,57 @@ export default function ShowcasePage() {
   return (
     <>
       <Header />
-      <main className="w-full min-h-screen flex flex-col items-start bg-white px-8 pb-60 pt-16">
+      <main className="w-full min-h-screen flex flex-col items-start bg-white px-4 sm:px-6 md:px-8 pb-8 sm:pb-12 md:pb-60 pt-6 sm:pt-10 md:pt-16">
         <div className="w-full max-w-8xl">
           {/* Baris 1: Judul dan info */}
-          <div className="flex flex-row justify-start items-end mb-[160px]" style={{ gap: '300px' }}>
+          <div className="flex flex-col sm:flex-col md:flex-row justify-start items-start md:items-end mb-6 sm:mb-12 md:mb-[160px] gap-2 sm:gap-6 md:gap-[300px]">
             <div>
-              <h4 className="text-base md:text-lg" style={{ fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, color: '#181818', textAlign: 'left' }}>Showcase</h4>
-              <div className="text-base md:text-lg" style={{ color: '#181818', fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, textAlign: 'left' }}>12 Images</div>
+              <h4 className="text-sm sm:text-base md:text-lg" style={{ fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, color: '#181818', textAlign: 'left' }}>Showcase</h4>
+              <div className="text-sm sm:text-base md:text-lg" style={{ color: '#181818', fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, textAlign: 'left' }}>12 Images</div>
             </div>
             <div>
-              <h4 className="text-base md:text-lg" style={{ fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, color: '#181818', textAlign: 'left' }}>2021 -</h4>
-              <div className="text-base md:text-lg" style={{ color: '#181818', fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, textAlign: 'left' }}>Ongoing</div>
+              <h4 className="text-sm sm:text-base md:text-lg" style={{ fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, color: '#181818', textAlign: 'left' }}>2021 -</h4>
+              <div className="text-sm sm:text-base md:text-lg" style={{ color: '#181818', fontFamily: 'Power Grotesk, sans-serif', fontWeight: 400, textAlign: 'left' }}>Ongoing</div>
             </div>
           </div>
-          {/* Baris 2: Grid dan Preview */}
-          <div className="flex flex-row gap-12 items-start justify-between w-full">
-            {/* Kiri: Grid 3x4 */}
-            <div className="flex-1 flex flex-col">
-              <div className="w-fit grid grid-cols-4 grid-rows-3 gap-12">
+          {/* Baris 2: List gambar horizontal scroll (mobile/tablet), grid (desktop) dan Preview */}
+          <div className="flex flex-col md:flex-row gap-4 sm:gap-8 md:gap-12 items-start justify-between w-full">
+            {/* List gambar */}
+            <div className="w-full md:flex-1 flex flex-col mb-4 sm:mb-8 md:mb-0">
+              {/* Mobile/tablet: horizontal scroll, Desktop: grid */}
+              <div className="block md:hidden w-full overflow-x-auto pb-2">
+                <div className="flex flex-row gap-2 sm:gap-4" style={{ minWidth: 'max-content' }}>
+                  {images.map((img, idx) => (
+                    <div key={img.id} className="flex flex-col items-center cursor-pointer group w-fit h-fit pt-2" onClick={() => setSelected(idx)}>
+                      {selected === idx && (
+                        <div className="mb-1" style={{ height: 2, width: 24, background: '#181818', borderRadius: 2 }} />
+                      )}
+                      <span className="mb-2 text-xs sm:text-sm font-regular group-hover:text-black" style={{ fontFamily: 'Power Grotesk, sans-serif' }}>{img.id}</span>
+                      <div className={`flex items-center justify-center rounded-md transition-all h-14 sm:h-20`} style={{ width: 80, aspectRatio: '1/1', background: '#f5f5f5' }}>
+                        <Image src={img.src} alt={img.alt} width={80} height={80} className="object-contain" />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="hidden md:grid w-full grid-cols-4 grid-rows-3 gap-12">
                 {images.map((img, idx) => (
-                  <div key={img.id} className="flex flex-col items-center cursor-pointer group w-fit h-fit pt-2" onClick={() => setSelected(idx)}>
+                  <div key={img.id} className="flex flex-col items-center cursor-pointer group w-full h-fit pt-2" onClick={() => setSelected(idx)}>
                     {selected === idx && (
                       <div className="mb-1" style={{ height: 2, width: 24, background: '#181818', borderRadius: 2 }} />
                     )}
                     <span className="mb-2 text-xs font-regular group-hover:text-black" style={{ fontFamily: 'Power Grotesk, sans-serif' }}>{img.id}</span>
-                    <div className={`flex items-center justify-center rounded-md transition-all`} style={{ width: 80, height: 80, aspectRatio: '1/1', background: '#f5f5f5' }}>
+                    <div className={`flex items-center justify-center rounded-md transition-all h-20`} style={{ width: '100%', maxWidth: 80, aspectRatio: '1/1', background: '#f5f5f5' }}>
                       <Image src={img.src} alt={img.alt} width={80} height={80} className="object-contain" />
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            {/* Kanan: Preview Besar */}
-            <div className="flex-1 flex items-center justify-center">
-              <div className="relative w-full aspect-square">
-                <Image src={images[selected].src} alt={images[selected].alt} fill className="object-cover" />
+            {/* Preview Besar */}
+            <div className="w-full md:flex-1 flex items-center justify-center">
+              <div className="relative w-full aspect-square max-w-full">
+                <Image src={images[selected].src} alt={images[selected].alt} fill className="object-cover rounded-md" />
               </div>
             </div>
           </div>
