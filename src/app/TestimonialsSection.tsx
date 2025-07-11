@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.5,
+          opacity: 0.2,
           zIndex: 0,
           pointerEvents: 'none',
         }}

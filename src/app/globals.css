@@ -5,12 +5,14 @@
   --foreground: #171717;
 }
 
+/*
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+*/
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -22,4 +24,33 @@
 html, body {
   background: #fff !important;
   font-family: 'Power Grotesk', system-ui, sans-serif !important;
+  cursor: auto !important;
+}
+
+/* Smooth Scrolling Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.smooth-scroll-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }

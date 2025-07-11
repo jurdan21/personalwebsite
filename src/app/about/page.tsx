@@ -55,6 +55,7 @@ export default function AboutPage() {
                   <li>Wireframing</li>
                   <li>Icon Design</li>
                   <li>Framer Dev</li>
+                  <li>Wordpress Dev</li>
                 </ul>
               </div>
             </div>

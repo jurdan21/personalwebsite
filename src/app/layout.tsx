@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./fonts.css";
+import SmoothScrollProvider from "./SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: "Jurdan Wahyu",
@@ -25,7 +26,9 @@ export default function RootLayout({
         <link rel="shortcut icon" href="https://res.cloudinary.com/dbmcmylvr/image/upload/v1751360473/New%20Website/Favicon_o3q4w0.svg" type="image/svg+xml" />
       </head>
       <body className="font-power-grotesk antialiased bg-white">
-        {children}
+        <SmoothScrollProvider>
+          {children}
+        </SmoothScrollProvider>
       </body>
     </html>
   );

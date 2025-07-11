@@ -77,17 +77,38 @@ export default function SplashScreen({ children }: { children: React.ReactNode }
         .ml10 {
           position: relative;
           font-weight: 900;
-          font-size: 4em;
+          font-size: 2.2em;
           color: #181818;
           font-family: 'Power Grotesk', sans-serif;
+        }
+        @media (min-width: 480px) {
+          .ml10 {
+            font-size: 2.8em;
+          }
+        }
+        @media (min-width: 768px) {
+          .ml10 {
+            font-size: 3.5em;
+          }
+        }
+        @media (min-width: 1024px) {
+          .ml10 {
+            font-size: 4em;
+          }
         }
         .ml10 .text-wrapper {
           position: relative;
           display: inline-block;
-          padding-top: 0.2em;
+          padding-top: 0.1em;
           padding-right: 0.05em;
           padding-bottom: 0.1em;
           overflow: hidden;
+        }
+        @media (max-width: 480px) {
+          .ml10 .text-wrapper {
+            padding-top: 0.05em;
+            padding-bottom: 0.05em;
+          }
         }
         .ml10 .letter {
           display: inline-block;
