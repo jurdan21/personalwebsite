@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body className="font-power-grotesk antialiased bg-white">
         <SmoothScrollProvider>
-          {children}
+        {children}
         </SmoothScrollProvider>
       </body>
     </html>

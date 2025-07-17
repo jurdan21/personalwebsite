@@ -6,12 +6,12 @@ import Image from 'next/image';
 const projects = [
   { no: "01", name: "Feedloop Website V2", type: "Website", date: "Coming Soon", url: "/projects/feedloop-website-v2", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
   { no: "02", name: "Verdant", type: "Landingpage", date: "1.1.2024", url: "/projects/verdant", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1751548213/New%20Website/Assert/Verdant/6_dsp5i9.webp" },
-  { no: "03", name: "Ngelu Doc", type: "Mobile App", date: "Coming Soon", url: "/projects/ngelu-doc", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "04", name: "Watuijo Interior", type: "Website", date: "22.22.2023", url: "/projects/watujo-interior", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "05", name: "Carros", type: "Landingpage", date: "22.22.2023", url: "/projects/carros", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "03", name: "Ngelu Medical", type: "Mobile App", date: "Coming Soon", url: "/projects/ngelu-doc", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "04", name: "Watuijo Interior", type: "Website", date: "12.12.2023", url: "/projects/watujo-interior", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752681970/New%20Website/Assert/Watuijo/1_yogo5y.webp" },
+  { no: "05", name: "Carros", type: "Landingpage", date: "14.02.2024", url: "/projects/carros", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752679322/New%20Website/Assert/Carros/1_mepgin.png" },
   { no: "06", name: "Coco DS", type: "Design System", date: "Coming Soon", url: "/projects/coco-ds", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
   { no: "07", name: "Rhento", type: "Mobile App", date: "Coming Soon", url: "/projects/rhento", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "08", name: "Postera", type: "Website", date: "22.22.2023", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "08", name: "Postera", type: "Website", date: "Coming Soon", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
 ];
 
 export default function ProjectsSection() {
