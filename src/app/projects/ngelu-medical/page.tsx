@@ -102,7 +102,7 @@ export default function NgeluMedicalPage() {
         {/* row 1 gambar */}
         <div className="w-full max-w-[1440px] aspect-[4/3] relative">
           <Image
-            src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752760014/New%20Website/Assert/Ngelu%20Medical/1_g29nv1.webp"
+            src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752761888/New%20Website/Assert/Ngelu%20Medical/1_1_pckkc4.webp"
             alt="Ngelu Medical Project Hero"
             fill
             className="object-cover rounded-none shadow-none"
@@ -132,7 +132,7 @@ export default function NgeluMedicalPage() {
         {/* row 3 gambar */}
         <div className="w-full max-w-[1440px] aspect-[4/3] relative">
           <Image
-            src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752760017/New%20Website/Assert/Ngelu%20Medical/4_xltajd.webp"
+            src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752761888/New%20Website/Assert/Ngelu%20Medical/4_1_lhsbep.webp"
             alt="Ngelu Medical Asset 3"
             fill
             className="object-cover rounded-none shadow-none"
