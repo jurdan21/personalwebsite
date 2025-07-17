@@ -11,7 +11,7 @@ const projects = [
   { no: "05", name: "Carros", type: "Landingpage", date: "14.02.2024", url: "/projects/carros", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752679322/New%20Website/Assert/Carros/1_mepgin.png" },
   { no: "06", name: "Coco DS", type: "Design System", date: "Coming Soon", url: "/projects/coco-ds", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
   { no: "07", name: "Rhento", type: "Mobile App", date: "Coming Soon", url: "/projects/rhento", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "08", name: "Postera", type: "Website", date: "Coming Soon", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "08", name: "Postera", type: "Website", date: "16.10.2024", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752725428/New%20Website/Assert/Postera/1_zkc63z.webp" },
 ];
 
 export default function ProjectsSection() {
