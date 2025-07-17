@@ -114,7 +114,7 @@ export default function NgeluMedicalPage() {
         <div className="w-full max-w-[1440px] flex flex-row gap-[20px]">
           <div className="w-full aspect-square relative flex justify-center">
             <Image
-              src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752760015/New%20Website/Assert/Ngelu%20Medical/2_mkzqnz.webp"
+              src="https://res.cloudinary.com/dbmcmylvr/image/upload/v1752761693/New%20Website/Assert/Ngelu%20Medical/2_2_tk0xcb.webp"
               alt="Ngelu Medical Asset 1"
               fill
               className="object-cover"
