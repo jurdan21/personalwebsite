@@ -8,6 +8,16 @@ export default function HeroSection() {
   const greetingRef = useRef<HTMLSpanElement>(null);
   const descriptionRef = useRef<HTMLSpanElement>(null);
 
+  const handleScrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   useEffect(() => {
     // GSAP Animation Timeline with smoother defaults
     const tl = gsap.timeline({ 
@@ -142,6 +152,7 @@ export default function HeroSection() {
         <div className="w-full flex flex-col md:flex-row items-start md:items-end justify-between gap-4 md:gap-0 mt-8 md:mt-0">
           <span className="bottom-text text-base sm:text-lg md:text-[18px] leading-6 sm:leading-7 md:leading-[28px] font-normal text-black-base" style={{ color: '#181818' }}>Est. 2021</span>
           <button
+            onClick={handleScrollToProjects}
             className="bottom-text text-base sm:text-lg md:text-[18px] leading-6 sm:leading-7 md:leading-[28px] font-normal text-black-base cursor-pointer bg-transparent border-0 p-0 relative after:content-[''] after:block after:h-[2px] after:bg-[#181818] after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100"
             style={{ color: '#181818' }}
             data-scroll-to="projects"
