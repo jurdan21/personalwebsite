@@ -21,7 +21,7 @@ export default function FooterSection() {
             <a href="https://www.instagram.com/jurdanwahyu/" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Instagram</a>
             <a href="https://medium.com/@jurdann.wahyu" className="relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Medium</a>
           </div>
-          <a href="#" className="text-[16px] md:text-[24px] mt-4 md:mt-0 relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Resume ↓</a>
+          <a href="https://drive.google.com/file/d/1LnTd3J2nkCjroVenXbjyyE0i2amSDXn2/view?usp=sharing" className="text-[16px] md:text-[24px] mt-4 md:mt-0 relative after:content-[''] after:block after:h-[2px] after:bg-white after:scale-x-0 after:transition-transform after:duration-300 after:origin-left hover:after:scale-x-100">Resume ↓</a>
         </div>
         {/* Row 3 */}
         <div className="flex flex-col md:flex-row items-center justify-between w-full px-4 md:px-8 text-[12px] md:text-[14px] gap-2 md:gap-0">

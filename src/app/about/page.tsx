@@ -21,7 +21,7 @@ export default function AboutPage() {
             </div>
             <div className="flex-shrink-0 w-full md:w-auto flex justify-end md:items-baseline mt-1 sm:mt-2 md:mt-0">
               <span className="text-sm sm:text-base md:text-lg font-regular" style={{ fontFamily: 'Power Grotesk, sans-serif', color: '#181818', lineHeight: 1 }}>
-                (Resume <span className="align-middle text-xs sm:text-sm md:text-base">↓</span>)
+                (<a href="https://drive.google.com/file/d/1LnTd3J2nkCjroVenXbjyyE0i2amSDXn2/view?usp=sharing" target="_blank" rel="noopener" className="underline" style={{ color: '#181818' }}>Resume</a> <span className="align-middle text-xs sm:text-sm md:text-base">↓</span>)
               </span>
             </div>
           </div>
