@@ -9,9 +9,9 @@ const projects = [
   { no: "02", name: "Ngelu Medical", type: "Mobile App", date: "4.7.2022", url: "/projects/ngelu-medical", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752761888/New%20Website/Assert/Ngelu%20Medical/1_1_pckkc4.webp" },
   { no: "03", name: "Watuijo Interior", type: "Website", date: "12.12.2023", url: "/projects/watujo-interior", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752681970/New%20Website/Assert/Watuijo/1_yogo5y.webp" },
   { no: "04", name: "Carros", type: "Landingpage", date: "14.02.2024", url: "/projects/carros", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752679322/New%20Website/Assert/Carros/1_mepgin.png" },
-  { no: "05", name: "Coco DS", type: "Design System", date: "Coming Soon", url: "/projects/coco-ds", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "06", name: "Rhento", type: "Mobile App", date: "Coming Soon", url: "/projects/rhento", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
-  { no: "07", name: "Postera", type: "Website", date: "16.10.2024", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752725428/New%20Website/Assert/Postera/1_zkc63z.webp" },
+  // { no: "05", name: "Coco DS", type: "Design System", date: "Coming Soon", url: "/projects/coco-ds", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1683698860/image2_gex99j.png" },
+  { no: "05", name: "Rhento", type: "Mobile App", date: "2.9.2021", url: "/projects/rhento", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1753096974/New%20Website/Assert/Rentho/1_tmphh6.webp" },
+  { no: "06", name: "Postera", type: "Website", date: "16.10.2024", url: "/projects/postera", image: "https://res.cloudinary.com/dbmcmylvr/image/upload/v1752725428/New%20Website/Assert/Postera/1_zkc63z.webp" },
 ];
 
 export default function ProjectsSection() {
