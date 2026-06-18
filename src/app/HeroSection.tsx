@@ -143,7 +143,7 @@ export default function HeroSection() {
               className="block max-w-full md:max-w-xl text-left md:text-right text-base sm:text-lg md:text-xl lg:text-[24px] leading-6 sm:leading-7 md:leading-8 lg:leading-[36px] font-normal text-gray-500"
               style={{ color: '#757575' }}
             >
-              With 3+ years of experience, focused on clarity, efficiency, and user experience.
+              With 4+ years of experience, focused on clarity, efficiency, and user experience.
             </span>
           </div>
         </div>
